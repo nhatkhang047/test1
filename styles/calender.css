@@ -1,0 +1,74 @@
+/* dfdsfdsf */
+.calendar-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+}
+
+.calendar-container h1 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.flatpickr-calendar {
+  margin: 0 auto;
+}
+
+/* Event Section Header Styles */
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.events-header h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.events-list {
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.event {
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid #1976d2;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.event-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.event-description {
+  color: #555;
+  font-size: 14px;
+}
+
+.event-time {
+  color: #888;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.no-events {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.flatpickr-calendar {
+  box-shadow: none;
+}

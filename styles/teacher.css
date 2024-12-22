@@ -1,0 +1,101 @@
+.container {
+  background: white;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.btn {
+  background-color: #ffcc00;
+  border: none;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f4f4f4;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  background-color: white;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #f0f0f0;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.pagination button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.bt {
+  display: flex; /* Sử dụng flex để hiển thị các nút ngang hàng */
+  gap: 8px; /* Tạo khoảng cách giữa các nút */
+}
+
+.btn {
+  padding: 8px;
+  background: #e0e0e0;
+}
+
+.btn.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn:hover:not([disabled]) {
+  background-color: #ccc;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+}

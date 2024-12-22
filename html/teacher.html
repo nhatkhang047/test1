@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Management</title>
+    <link rel="stylesheet" href="../styles/1.css" />
+    <link rel="stylesheet" href="../styles/teacher.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="/eduford_img/logo.png" alt="Logo" class="logo-img" />
+        <span class="logo-text">Eduford</span>
+      </div>
+
+      <!-- Menu -->
+      <div class="menu">
+        <!-- Main Menu Section -->
+        <div class="menu-section">
+          <span class="menu-title">MENU</span>
+          <a href="/html/admin.html" class="menu-item">
+            <img src="/images/home.png" alt="" class="menu-icon" />
+            <span>Home</span>
+          </a>
+          <a href="" class="menu-item">
+            <img src="/images/teacher.png" alt="" class="menu-icon" />
+            <span>Teachers</span>
+          </a>
+          <a href="/html/students.html" class="menu-item">
+            <img src="/images/student.png" alt="" class="menu-icon" />
+            <span>Students</span>
+          </a>
+          <a href="/html/parents.html" class="menu-item">
+            <img src="/images/parent.png" alt="" class="menu-icon" />
+            <span>Parents</span>
+          </a>
+          <a href="/html/subject.html" class="menu-item">
+            <img src="/images/subject.png" alt="" class="menu-icon" />
+            <span>Subjects</span>
+          </a>
+          <a href="/html/classes.html" class="menu-item">
+            <img src="/images/class.png" alt="" class="menu-icon" />
+            <span>Classes</span>
+          </a>
+          <a href="/html/lessons.html" class="menu-item">
+            <img src="/images/lesson.png" alt="" class="menu-icon" />
+            <span>Lessons</span>
+          </a>
+          <a href="/html/exams.html" class="menu-item">
+            <img src="/images/exam.png" alt="" class="menu-icon" />
+            <span>Exams</span>
+          </a>
+          <a href="/html/assignments.html" class="menu-item">
+            <img src="/images/assignment.png" alt="" class="menu-icon" />
+            <span>Assignments</span>
+          </a>
+          <a href="/html/results.html" class="menu-item">
+            <img src="/images/result.png" alt="" class="menu-icon" />
+            <span>Results</span>
+          </a>
+          <a href="/html/attendance.html" class="menu-item">
+            <img src="/images/attendance.png" alt="" class="menu-icon" />
+            <span>Attendance</span>
+          </a>
+          <a href="/html/events.html" class="menu-item">
+            <img src="/images/calendar.png" alt="" class="menu-icon" />
+            <span>Events</span>
+          </a>
+          <a href="/html/messages.html" class="menu-item">
+            <img src="/images/message.png" alt="" class="menu-icon" />
+            <span>Messages</span>
+          </a>
+          <a href="/html/announcements.html" class="menu-item">
+            <img src="/images/announcement.png" alt="" class="menu-icon" />
+            <span>Announcements</span>
+          </a>
+        </div>
+
+        <!-- Other Section -->
+        <div class="menu-section">
+          <span class="menu-title">OTHER</span>
+          <a href="/profile" class="menu-item">
+            <img src="/images/profile.png" alt="" class="menu-icon" />
+            <span>Profile</span>
+          </a>
+          <a href="/settings" class="menu-item">
+            <img src="/images/setting.png" alt="" class="menu-icon" />
+            <span>Settings</span>
+          </a>
+          <a href="/index.html" class="menu-item">
+            <img src="/images/logout.png" alt="" class="menu-icon" />
+            <span>Logout</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main">
+      <!-- Navbar -->
+      <header class="navbar">
+        <div class="search-bar">
+          <img src="/images/search.png" alt="" class="search-icon" />
+          <input type="text" placeholder="Search..." class="search-input" />
+        </div>
+        <div class="navbar-icons">
+          <div class="icon-wrapper">
+            <img src="/images/message.png" alt="" class="icon" />
+          </div>
+          <div class="icon-wrapper relative">
+            <img src="/images/announcement.png" alt="" class="icon" />
+            <div class="notification-badge">1</div>
+          </div>
+          <div class="user-info">
+            <span class="user-name">John Doe</span>
+            <span class="user-role">Admin</span>
+          </div>
+          <img src="/images/avatar.png" alt="Avatar" class="user-avatar" />
+        </div>
+      </header>
+
+      <div class="container">
+        <!-- Header -->
+        <div class="flex justify-between">
+          <h1>All Teachers</h1>
+          <div class="flex">
+            <div class="search-bar">
+              <img
+                src="/images/search.png"
+                alt="Search"
+                width="14"
+                height="14"
+              />
+              <input type="text" placeholder="Search..." />
+            </div>
+            <button class="btn">
+              <img
+                src="/images/filter.png"
+                alt="Filter"
+                width="14"
+                height="14"
+              />
+            </button>
+            <button class="btn">
+              <img src="/images/sort.png" alt="Sort" width="14" height="14" />
+            </button>
+            <button class="btn">
+              <img src="/images/edit.png" alt="Sort" width="14" height="14" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <table>
+          <thead>
+            <tr>
+              <th>Info</th>
+              <th>Teacher ID</th>
+              <th>Subjects</th>
+              <th>Classes</th>
+              <th>Phone</th>
+              <th>Address</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="teacher-list">
+            <!-- Data will be populated dynamically -->
+          </tbody>
+        </table>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <button disabled>Prev</button>
+          <div class="bt">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <span>...</span>
+            <button class="btn">10</button>
+          </div>
+          <button>Next</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Sample data
+      const teachersData = [
+        {
+          id: 1,
+          name: "John Doe",
+          email: "john@doe.com",
+          photo:
+            "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          phone: "1234567890",
+          subjects: ["Math", "Geometry"],
+          classes: ["1B", "2A", "3C"],
+          address: "123 Main St, Anytown, USA",
+        },
+        {
+          id: 2,
+          name: "Jane Doe",
+          email: "jane@doe.com",
+          photo:
+            "https://images.pexels.com/photos/936126/pexels-photo-936126.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          phone: "1234567890",
+          subjects: ["Physics", "Chemistry"],
+          classes: ["5A", "4B", "3C"],
+          address: "123 Main St, Anytown, USA",
+        },
+        {
+          id: 3,
+          name: "Mike Geller",
+          email: "mike@geller.com",
+          photo:
+            "https://images.pexels.com/photos/428328/pexels-photo-428328.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          phone: "1234567890",
+          subjects: ["Biology"],
+          classes: ["5A", "4B", "3C"],
+          address: "123 Main St, Anytown, USA",
+        },
+        {
+          id: 4,
+          name: "Jay French",
+          email: "jay@gmail.com",
+          photo:
+            "https://images.pexels.com/photos/1187765/pexels-photo-1187765.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          phone: "1234567890",
+          subjects: ["History"],
+          classes: ["5A", "4B", "3C"],
+          address: "123 Main St, Anytown, USA",
+        },
+        {
+          id: 5,
+          name: "Jane Smith",
+          email: "jane@gmail.com",
+          photo:
+            "https://images.pexels.com/photos/1102341/pexels-photo-1102341.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          phone: "1234567890",
+          subjects: ["Music", "History"],
+          classes: ["5A", "4B", "3C"],
+          address: "123 Main St, Anytown, USA",
+        },
+        {
+          id: 6,
+          name: "Anna Santiago",
+          email: "anna@gmail.com",
+          photo:
+            "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          phone: "1234567890",
+          subjects: ["Physics"],
+          classes: ["5A", "4B", "3C"],
+          address: "123 Main St, Anytown, USA",
+        },
+        {
+          id: 7,
+          name: "Allen Black",
+          email: "allen@black.com",
+          photo:
+            "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          phone: "1234567890",
+          subjects: ["English", "Spanish"],
+          classes: ["5A", "4B", "3C"],
+          address: "123 Main St, Anytown, USA",
+        },
+        {
+          id: 8,
+          name: "Ophelia Castro",
+          email: "ophelia@castro.com",
+          photo:
+            "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          phone: "1234567890",
+          subjects: ["Math", "Geometry"],
+          classes: ["5A", "4B", "3C"],
+          address: "123 Main St, Anytown, USA",
+        },
+        {
+          id: 9,
+          name: "Derek Briggs",
+          email: "derek@briggs.com",
+          photo:
+            "https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          phone: "1234567890",
+          subjects: ["Literature", "English"],
+          classes: ["5A", "4B", "3C"],
+          address: "123 Main St, Anytown, USA",
+        },
+        {
+          id: 10,
+          name: "John Glover",
+          email: "john@glover.com",
+          photo:
+            "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          phone: "1234567890",
+          subjects: ["Biology"],
+          classes: ["5A", "4B", "3C"],
+          address: "123 Main St, Anytown, USA",
+        },
+      ];
+
+      const role = "admin"; // Role for conditional rendering
+
+      // Populate table
+      const teacherList = document.getElementById("teacher-list");
+
+      teachersData.forEach((teacher) => {
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+          <td>
+            <div class="flex items-center">
+              <img src="${
+                teacher.photo
+              }" alt="" width="40" height="40" class="rounded-full">
+              <div style="margin-left: 12px;">
+                <p>${teacher.name}</p>
+                <small>${teacher.email}</small>
+              </div>
+            </div>
+          </td>
+          <td>${teacher.id}</td>
+          <td>${teacher.subjects.join(", ")}</td>
+          <td>${teacher.classes.join(", ")}</td>
+          <td>${teacher.phone}</td>
+          <td>${teacher.address}</td>
+          <td>
+            <div class="flex gap-2">
+              <button class="btn">
+                <img src="/images/view.png" alt="View" width="14" height="14">
+              </button>
+              ${
+                role === "admin"
+                  ? `<button class="btn">
+                       <img src="/images/delete.png" alt="Delete" width="14" height="14">
+                     </button>`
+                  : ""
+              }
+            </div>
+          </td>
+        `;
+
+        teacherList.appendChild(row);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+.BUM-FinanceChart-container {
+  background-color: white;
+  border-radius: 12px;
+  width: 730px;
+  height: 500px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.BUM-FinanceChart-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.BUM-FinanceChart-title h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.BUM-FinanceChart-title img {
+  width: 20px;
+  height: 20px;
+}
+
+.BUM-FinanceChart {
+  width: 100%;
+  height: 400px;
+}
+
+.BUM-FinanceChart-legend {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.BUM-FinanceChart-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.BUM-FinanceChart-legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.BUM-FinanceChart-income {
+  background-color: #c3ebfa;
+}
+
+.BUM-FinanceChart-expense {
+  background-color: #cfceff;
+}

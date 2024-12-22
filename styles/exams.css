@@ -1,0 +1,94 @@
+.container-exam {
+  background: white;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar-exam {
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.search-bar-exam input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 8px;
+}
+
+.btn-exam {
+  background: #e0e0e0;
+
+  border: none;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.table-exams {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f4f4f4;
+}
+
+.pagination-exam {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  align-items: center;
+}
+
+.pagination-exam button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #f0f0f0;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.pagination-exam button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-buttons {
+  display: flex;
+  gap: 8px;
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Management</title>
+    <link rel="stylesheet" href="../styles/1.css" />
+    <link rel="stylesheet" href="../styles/teacher.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="/eduford_img/logo.png" alt="Logo" class="logo-img" />
+        <span class="logo-text">Eduford</span>
+      </div>
+
+      <!-- Menu -->
+      <div class="menu">
+        <!-- Main Menu Section -->
+        <div class="menu-section">
+          <span class="menu-title">MENU</span>
+          <a href="/html/admin.html" class="menu-item">
+            <img src="/images/home.png" alt="" class="menu-icon" />
+            <span>Home</span>
+          </a>
+          <a href="../html/teacher.html" class="menu-item">
+            <img src="/images/teacher.png" alt="" class="menu-icon" />
+            <span>Teachers</span>
+          </a>
+          <a href="/html/students.html" class="menu-item">
+            <img src="/images/student.png" alt="" class="menu-icon" />
+            <span>Students</span>
+          </a>
+          <a href="/html/parents.html" class="menu-item">
+            <img src="/images/parent.png" alt="" class="menu-icon" />
+            <span>Parents</span>
+          </a>
+          <a href="" class="menu-item">
+            <img src="/images/subject.png" alt="" class="menu-icon" />
+            <span>Subjects</span>
+          </a>
+          <a href="/html/classes.html" class="menu-item">
+            <img src="/images/class.png" alt="" class="menu-icon" />
+            <span>Classes</span>
+          </a>
+          <a href="/html/lessons.html" class="menu-item">
+            <img src="/images/lesson.png" alt="" class="menu-icon" />
+            <span>Lessons</span>
+          </a>
+          <a href="/html/exams.html" class="menu-item">
+            <img src="/images/exam.png" alt="" class="menu-icon" />
+            <span>Exams</span>
+          </a>
+          <a href="/html/assignments.html" class="menu-item">
+            <img src="/images/assignment.png" alt="" class="menu-icon" />
+            <span>Assignments</span>
+          </a>
+          <a href="/html/results.html" class="menu-item">
+            <img src="/images/result.png" alt="" class="menu-icon" />
+            <span>Results</span>
+          </a>
+          <a href="/html/attendance.html" class="menu-item">
+            <img src="/images/attendance.png" alt="" class="menu-icon" />
+            <span>Attendance</span>
+          </a>
+          <a href="/html/events.html" class="menu-item">
+            <img src="/images/calendar.png" alt="" class="menu-icon" />
+            <span>Events</span>
+          </a>
+          <a href="/html/messages.html" class="menu-item">
+            <img src="/images/message.png" alt="" class="menu-icon" />
+            <span>Messages</span>
+          </a>
+          <a href="/html/announcements.html" class="menu-item">
+            <img src="/images/announcement.png" alt="" class="menu-icon" />
+            <span>Announcements</span>
+          </a>
+        </div>
+
+        <!-- Other Section -->
+        <div class="menu-section">
+          <span class="menu-title">OTHER</span>
+          <a href="/profile" class="menu-item">
+            <img src="/images/profile.png" alt="" class="menu-icon" />
+            <span>Profile</span>
+          </a>
+          <a href="/settings" class="menu-item">
+            <img src="/images/setting.png" alt="" class="menu-icon" />
+            <span>Settings</span>
+          </a>
+          <a href="/index.html" class="menu-item">
+            <img src="/images/logout.png" alt="" class="menu-icon" />
+            <span>Logout</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main">
+      <!-- Navbar -->
+      <header class="navbar">
+        <div class="search-bar">
+          <img src="/images/search.png" alt="" class="search-icon" />
+          <input type="text" placeholder="Search..." class="search-input" />
+        </div>
+        <div class="navbar-icons">
+          <div class="icon-wrapper">
+            <img src="/images/message.png" alt="" class="icon" />
+          </div>
+          <div class="icon-wrapper relative">
+            <img src="/images/announcement.png" alt="" class="icon" />
+            <div class="notification-badge">1</div>
+          </div>
+          <div class="user-info">
+            <span class="user-name">John Doe</span>
+            <span class="user-role">Admin</span>
+          </div>
+          <img src="/images/avatar.png" alt="Avatar" class="user-avatar" />
+        </div>
+      </header>
+      <div class="container">
+        <!-- Header -->
+        <div class="flex justify-between">
+          <h1>All Subjects</h1>
+          <div class="flex">
+            <div class="search-bar">
+              <img
+                src="/images/search.png"
+                alt="Search"
+                width="14"
+                height="14"
+              />
+              <input type="text" placeholder="Search..." />
+            </div>
+            <button class="btn">
+              <img
+                src="/images/filter.png"
+                alt="Filter"
+                width="14"
+                height="14"
+              />
+            </button>
+            <button class="btn">
+              <img src="/images/sort.png" alt="Sort" width="14" height="14" />
+            </button>
+            <button class="btn">
+              <img src="/images/edit.png" alt="Sort" width="14" height="14" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <table>
+          <thead>
+            <tr>
+              <th>Subject Name</th>
+              <th>Teachers</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="subject-list">
+            <!-- Data will be populated dynamically -->
+          </tbody>
+        </table>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <button disabled>Prev</button>
+          <div class="bt">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <span>...</span>
+            <button class="btn">10</button>
+          </div>
+          <button>Next</button>
+        </div>
+      </div>
+
+      <script>
+        // Sample subject data
+        const subjectsData = [
+          {
+            id: 1,
+            name: "Math",
+            teachers: ["John Doe", "Jane Smith"],
+          },
+          {
+            id: 1,
+            name: "Math",
+            teachers: ["John Doe", "Jane Smith"],
+          },
+          {
+            id: 1,
+            name: "Math",
+            teachers: ["John Doe", "Jane Smith"],
+          },
+          {
+            id: 1,
+            name: "Math",
+            teachers: ["John Doe", "Jane Smith"],
+          },
+          {
+            id: 1,
+            name: "Math",
+            teachers: ["John Doe", "Jane Smith"],
+          },
+          {
+            id: 1,
+            name: "Math",
+            teachers: ["John Doe", "Jane Smith"],
+          },
+          {
+            id: 1,
+            name: "Math",
+            teachers: ["John Doe", "Jane Smith"],
+          },
+          {
+            id: 1,
+            name: "Math",
+            teachers: ["John Doe", "Jane Smith"],
+          },
+          {
+            id: 2,
+            name: "Physics",
+            teachers: ["Jane Doe", "Anna Santiago"],
+          },
+          {
+            id: 3,
+            name: "History",
+            teachers: ["Jay French"],
+          },
+          {
+            id: 4,
+            name: "English",
+            teachers: ["Allen Black", "Derek Briggs"],
+          },
+          {
+            id: 5,
+            name: "Biology",
+            teachers: ["Mike Geller", "John Glover"],
+          },
+        ];
+
+        const role = "admin"; // Role for conditional rendering
+
+        // Populate subject table
+        const subjectList = document.getElementById("subject-list");
+
+        subjectsData.forEach((subject) => {
+          const row = document.createElement("tr");
+
+          row.innerHTML = `
+            <td>${subject.name}</td>
+            <td>${subject.teachers.join(", ")}</td>
+            <td>
+              <div class="flex gap-2">
+                <button class="btn">
+                  <img src="/images/view.png" alt="View" width="14" height="14">
+                </button>
+                ${
+                  role === "admin"
+                    ? `<button class="btn">
+                         <img src="/images/delete.png" alt="Delete" width="14" height="14">
+                       </button>`
+                    : ""
+                }
+              </div>
+            </td>
+          `;
+
+          subjectList.appendChild(row);
+        });
+      </script>
+    </div>
+  </body>
+</html>
