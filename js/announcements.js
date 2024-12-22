@@ -83,15 +83,15 @@ announcementData.forEach((announcement) => {
       <td>
         <div class="flex gap-2">
           <button class="announcement-btn">
-            <img src="/images/view.png" alt="View" width="14" height="14" />
+            <img src="images/view.png" alt="View" width="14" height="14" />
           </button>
           ${
             role === "admin"
               ? `<button class="announcement-btn">
-                   <img src="/images/edit.png" alt="Edit" width="14" height="14" />
+                   <img src="images/edit.png" alt="Edit" width="14" height="14" />
                  </button>
                  <button class="announcement-btn">
-                   <img src="/images/delete.png" alt="Delete" width="14" height="14" />
+                   <img src="images/delete.png" alt="Delete" width="14" height="14" />
                  </button>`
               : ""
           }

@@ -38,12 +38,12 @@ examData.forEach((exam) => {
       <td>
         <div class="flex gap-2">
           <button class="btn-exam">
-            <img src="/images/view.png" alt="View" width="14" height="14">
+            <img src="images/view.png" alt="View" width="14" height="14">
           </button>
           ${
             role === "admin"
               ? `<button class="btn-exam">
-                   <img src="/images/delete.png" alt="Delete" width="14" height="14">
+                   <img src="images/delete.png" alt="Delete" width="14" height="14">
                  </button>`
               : ""
           }
