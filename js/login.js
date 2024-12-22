@@ -51,7 +51,7 @@ document.getElementById("signInForm").addEventListener("submit", (event) => {
   ) {
     // Đăng nhập thành công, chuyển hướng đến trang home.html
 
-    window.location.href = "/html/admin.html"; // Chuyển hướng đến trang home.html
+    window.location.href = "admin.html"; // Chuyển hướng đến trang home.html
   } else {
     alert("Incorrect email or password.");
   }
